@@ -308,8 +308,7 @@ Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_FS-030_
   </style>
 
   
-<h3>Conference Presentaion: Stealth Technology of SR-71 Blackbird</h3>
-  
+<h3 style= "font-family:calibri; color: white;"><b>Conference presentation: Stealth Technology of the Lockheed SR-71 Blackbird</b></h3>
 <script>
     var slideImages = ["slide 1.jpg", "slide 2.jpg", "slide 3.jpg", "slide 4.jpg", "slide 5.jpg"]
     var currentSlide = 0;
@@ -318,29 +317,31 @@ Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_FS-030_
         document.getElementById('Slide').src = slideImages[currentSlide];
     }
 
-    function nextSlide() 
-        currentSlide = (currentSlide + 1) % slideImages.length;
+    function nextSlide() {
+        currentSlide = (currentSlide + 1)% slideImages.length;
         showSlide();
     }
 
     function prevSlide() {
-        currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+        currentSlide = (currentSlide - 1 + slideImages.length)% slideImages.length;
         showSlide();
     }
 
     function showSlideNumber(slideNumber) {
-        currentSlide = slideNumber - 1;
+        currentSlide = slideNumber-1;
         showSlide();
     }
-    showSlide();
+    showSlide()
 </script>
 
 <div id="slide-container">
-    <img id="Slide" src="slide 1.jpg" alt="slide 1" style ="width:100%; max-width:800px;">
-  
+    <img id="Slide" src="slide 1.jpg" alt="Slide1" style ="width:100%; max-width:800px;">
+
 <div class="button-container">
+    <button class="button-container">
         <button class="button" onclick="prevSlide()">Previous</button>
         <button class="button" onclick="nextSlide()">Next</button>
+    </button>
 </div>
 
 <div class="slide-number-container">
@@ -352,7 +353,7 @@ Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_FS-030_
 </div>
 
 <style>
- #slide-container {
+#slide-container {
     text-align: center;
     position: relative;
 }
@@ -364,7 +365,6 @@ Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_FS-030_
   transform: translateX(-50%);
   margin-bottom: -100px;
 }
-
 .button {
   padding: 10px 20px;
   background-color: #5d6d87;
@@ -373,7 +373,7 @@ Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_FS-030_
   border-radius:5px;
   font-size: 16px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 5px
 }
 
 .slide-number-container {
@@ -383,7 +383,6 @@ Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_FS-030_
   transform: translateX(-50%);
   margin-bottom: -50px;
 }
-  
 </style>
 </html>
 
